@@ -3,24 +3,24 @@ if (!defined('ctx')) die();
 
 // language can be ru, en or any localazied language
 // Язык может быть Английский, Русский или любой другой локализованный язык
-define('LANGUAGE', 'ru'); 
+define('LANGUAGE', 'en'); 
 
 define('DB_TYPE', 'mysql');
 // database host
 // Хост базы данных
-define('DB_HOST', 'localhost');  
+define('DB_HOST', '127.0.0.1');  
 // database name
 // Имя базы данных
-define('DB_NAME', 'acp'); 
+define('DB_NAME', 'l2jmobius'); 
 // database user 
 // Пользователь базы данных
 define('DB_USER', 'root');  
 // database password
 // Пароль базы данных
-define('DB_PASS', '102030');   
+define('DB_PASS', '');   
 // absolute url, points to the acp main location
 // Абсалютный путь к Мастер Акаунту
-define('URL', 'http://l2server.com/'); 
+define('URL', 'http://127.0.0.1/'); 
 // absolute path
 // Абсалютный путь библиотеки
 define('ROOT_PATH', dirname(__FILE__).'/'); 
@@ -28,12 +28,12 @@ define('ROOT_PATH', dirname(__FILE__).'/');
 
 // algorithm used for l2j password hashing whirlpool or sha1 (legacy)
 // Использованный алгоритм для хешированние паролей ява серверов whirlpool или sha1 (legacy)
-define('PASSWORD_HASH_ALGORITHM', 'whirlpool'); 
+define('PASSWORD_HASH_ALGORITHM', 'sha1'); 
 
 //captcha public and private keys get them from: https://www.google.com/recaptcha/intro/
 //рекаптча публичный и приватный ключ, получите его тут: https://www.google.com/recaptcha/intro/
-define('CAPTCHA_PUBLIC_KEY', '6LeOXhMUA--C-P3fyK9t3I9');
-define('CAPTCHA_PRIVATE_KEY', '6LeOXhMUAAA--2gSy5du');
+define('CAPTCHA_PUBLIC_KEY', '6LeLoCUTAAAAA*************');
+define('CAPTCHA_PRIVATE_KEY', '6LeLoCUTAAAAAH***********');
 
 // cache time in seconds
 // Кешированние в секундах

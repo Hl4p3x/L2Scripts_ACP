@@ -96,13 +96,14 @@ class LuckyWheel_Controller extends Controller {
                 $character = $server_model->GetCharacter($char_name);
                 if ($character['online'] == 1) {
                     $error = _s("CHAR_MUST_OFFLINE");
-                } else {
+                } 
+				else {
                     $prize = $_CONFIG['luckywheel_prizes'][mt_rand(0,count($_CONFIG['luckywheel_prizes']))];
                     $donate_model = new Donate_Model();
                     $donate_model->LogTransaction(_s("LUCKY_WHEEL_LOG"), -$_CONFIG['luckywheel_price'], Session::get("accountId"));
                     $donate_model->DeductBalance(Session::get("accountId"), $_CONFIG['luckywheel_price']);
                     $balance -= $_CONFIG['luckywheel_price'];
-
+					
                     $server_model->AddItem($character['obj_Id'], $prize['item_id'], $prize['count'], 0);
 
                     $item = array(

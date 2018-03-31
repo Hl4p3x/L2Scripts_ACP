@@ -298,7 +298,8 @@ $_STRINGS = array(
 	"ATTN_DESC2" => "If you want to transfer the gold to your game account,",
 	"ATTN_DESC3" => "You need to transfer using the 3 step procedure,",
 	"ATTN_DESC4" => "button",
-	"ATTN_DESC5" => "You don't have to logout!",	
+	"ATTN_DESC6" => "You don't have to logout!",
+	"ATTN_DESC5" => "Your character has to be offline to use ACP services.",
 	//registration descr
 	"AFTER_REG1" => "AFTER REGISTRATION DONT FORGET TO LOGIN TO YOUR",
 	"AFTER_REG2" => "MASTER ACCOUNT AND CREATE A GAME ACCOUNT.",

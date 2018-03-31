@@ -238,7 +238,7 @@ class Server_Model extends Model {
         return false;
     }
 
-    public function AddItem($char_id, $item_id, $count, $enchant) {
+    public function AddItemDelayed($char_id, $item_id, $count, $enchant) {
         $item_data = array(
             'owner_id' => $char_id,
             'item_id' => $item_id,
@@ -251,6 +251,24 @@ class Server_Model extends Model {
         );
 
         $this->game_db->insert("items_delayed", $item_data);
+    }
+	
+	public function AddItem($char_id, $item_id, $count, $enchant) {
+		$result = $this->game_db->select("SELECT MAX(object_id+1) as newObj FROM items");
+			if (is_array($result) && count($result) > 0) {
+				$return_data = $result[0];
+				$item_data = array(
+				'owner_id' => $char_id,
+				'object_id' => $return_data['newObj'],
+				'item_id' => $item_id,
+				'count' => $count,
+				'enchant_level' => $enchant,
+				'loc' => 'INVENTORY',
+				'loc_data' => '0'
+			);
+        }
+        
+        $this->game_db->insert("items", $item_data);
     }
 
     public function GetCharacter($char_name) {
@@ -281,6 +299,14 @@ class Server_Model extends Model {
 
     public function CheckGameAccount($account) {
         $result = $this->login_db->select("SELECT count(*) as `count` FROM accounts WHERE login = :login", array('login' => $account));
+        if ($result[0]['count'] == 0) {
+            return true;
+        }
+        return false;
+    }
+	
+	public function CheckDelayedItems($char_id) {
+        $result = $this->game_db->select("SELECT * FROM items_delayed WHERE owner_id = :char_id", array('char_id' => $char_id));
         if ($result[0]['count'] == 0) {
             return true;
         }
