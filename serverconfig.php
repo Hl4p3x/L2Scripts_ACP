@@ -4,21 +4,21 @@ $_CONFIG['servers'] = array(
     array(
 		//Server name
 		//Название сервера
-        'name' => 'L2-Scripts Test HF',
+        'name' => 'Eternalwars',
 
         // login server mysql information
 		//Конфигурация мускула для логин сервера
         'ls_mysql_host' => 'localhost',
         'ls_mysql_user' => 'root',
-        'ls_mysql_pass' => '1--0',
-        'ls_mysql_db'   => 'l2auth',
+        'ls_mysql_pass' => 'potokerios1',
+        'ls_mysql_db'   => 'eternalwars',
 
         // game server mysql information
 		//Конфигурация мускула для гейм сервера
         'gs_mysql_host' => 'localhost',
         'gs_mysql_user' => 'root',
-        'gs_mysql_pass' => '1--',
-        'gs_mysql_db'   => 'l2game_hi5',
+        'gs_mysql_pass' => 'potokerios1',
+        'gs_mysql_db'   => 'eternalwars',
 		
 		//Maximum game accounts per Master accounts
 		//Максимум игровых акаунтов для одного мастер акаунта

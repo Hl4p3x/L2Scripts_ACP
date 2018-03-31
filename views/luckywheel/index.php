@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="wheel-popup">
                                     <div class="win-popup" hidden="">
-                                        <div class="win-img"><img src="http://cp.l2e-global.com//templates/e-global/images/wheel/win.png" alt=""></div>
+                                        <div class="win-img"><img src="win.png" alt=""></div>
                                         <div class="win-item-img"></div>
                                         <div class="win-item-name"><?php echo _s("ITEM_NAME"); ?></div>
                                                                             <div class="wheel-btn">

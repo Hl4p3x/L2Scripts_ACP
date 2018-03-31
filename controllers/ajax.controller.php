@@ -193,21 +193,25 @@ class Ajax_Controller extends Controller {
                     if ($server_model->CheckChar($char, Session::get("accountId"))) {
                         $character = $server_model->GetCharacter($char);
                         if ($character !== false/* && $character['online'] == 0*/) {
-                            $bonus_percent = $_CONFIG['account_level_discount'][get_account_level($account_data['account_exp'])];
-                            $bonus = (($bonus_percent / 100) * COINS_PER_DOLLAR) + COINS_PER_DOLLAR;
-                            $coins = intval(floor($amount*$bonus));
-
-                            $donate_model = new Donate_Model();
-                            $donate_model->LogTransaction(_s("COINS_TRANSFER"), -$amount, Session::get("accountId"), $character['char_name'], Session::get("serverId"));
-                            $donate_model->DeductBalance(Session::get("accountId"), $amount);
-
-                            $server_model->AddItem($character['obj_Id'], $_CONFIG['servers'][Session::get("serverId")]['coin_id'], $coins, 0);
-
+							if ($character['online'] == 0){
+								$bonus_percent = $_CONFIG['account_level_discount'][get_account_level($account_data['account_exp'])];
+								$bonus = (($bonus_percent / 100) * COINS_PER_DOLLAR) + COINS_PER_DOLLAR;
+								$coins = intval(floor($amount*$bonus));
+								$donate_model = new Donate_Model();
+								$donate_model->LogTransaction(_s("COINS_TRANSFER"), -$amount, Session::get("accountId"), $character['char_name'], Session::get("serverId"));
+								$donate_model->DeductBalance(Session::get("accountId"), $amount);
+								$server_model->AddItem($character['obj_Id'], $_CONFIG['servers'][Session::get("serverId")]['coin_id'], $coins, 0);
+							}
+							else {
+								$error = _s("CHAR_MUST_OFFLINE");
+							}
                             $account_model->IncrementExp(Session::get("accountId"), $amount * $_CONFIG['exp_per_dollar']);
-                        } else {
+                        }
+						else {
                             $error = _s("INCORRECT_CHAR");
                         }
-                    } else {
+                    } 
+					else {
                         $error = _s("INCORRECT_CHAR");
                     }
                 }

@@ -16,7 +16,7 @@
                     <li><?php echo _s("MAIN_PAGE_CAP"); ?></li>
                 </ol>
             </section>
-            <!-- END CONTENT HEADER -->
+            <!-- END CONTENT HEADER -->z
             <!-- BEGIN MAIN CONTENT -->
             <section class="content">
                 <center><div class="row" style="min-width: 850px;max-width: 850px;">
