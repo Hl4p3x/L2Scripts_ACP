@@ -1,0 +1,1 @@
+ALTER TABLE `accounts` ADD COLUMN `ma_id`  int NOT NULL DEFAULT 0;

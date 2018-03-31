@@ -1,0 +1,43 @@
+
+.lilium-notify-wp                                               {display: none; transform: translate3d(0,0,0); opacity: 0; z-index: 2000; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,.7)}
+.liliumEff-notify-box                                           {display: none; z-index: 2001; position: fixed; left: 0; right: 0; width: 100%; height: auto; text-align: center; color: white; font-size: 35px; font-weight: bold; font-family: atial;}
+.liliumEff-top-0												{top: 50px;}
+.liliumEff-top-1												{top: 100px;}
+.liliumEff-top-2												{top: 150px;}
+.liliumEff-top-3												{top: 200px;}
+.liliumEff-top-4												{top: 250px;}
+.liliumEff-notify-box .lilium-notify-text                       {will-change: contents, opacity, letter-spacing; position: relative; transform: translate3d(0,0,0); animation: lilium-text 2s 1 ease-out; display: inline-block;}
+.liliumEff-notify-box .lilium-notify-border                     {will-change: contents, opacity; position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto; translate3d(0,0,0);}
+.liliumEff-notify-box .lilium-notify-border:before              {will-change: contents, opacity, left; content: ''; position: absolute; top: 0; border: 3px solid transparent; transform: translate3d(0,0,0); width: 30px; height: 40px; border-bottom-color: white; border-left-color: white; animation: lilium-border-left 2s 1 cubic-bezier(0, 0, 0.5, 1); opacity: 0;}
+.liliumEff-notify-box .lilium-notify-border:after               {will-change: contents, opacity, right; content: ''; position: absolute; top: 0; border: 3px solid transparent; transform: translate3d(0,0,0); width: 30px; height: 40px; border-top-color: white; border-right-color: white; animation: lilium-border-right 2s 1 cubic-bezier(0, 0, 0.5, 1); opacity: 0;}
+
+.liliumEff-notify-cont                                          {position: fixed; right: 20px; top: 20px; z-index: 2001;}
+.lilium-notify-el                                               {will-change: filter, -webkit-filter; position: relative; font-size: 20px; text-align: right; animation: lilium-el 1s 1 ease-out; padding: 10px 15px; box-sizing: border-box; cursor: pointer; color: transparent; margin-bottom: 15px;}
+.liliumElRemoved                                                {animation: lilium-el-removed 1s 1 ease-out;}
+.lilium-danger                                                  {background: #922B21; box-shadow: 0 0 5px 0 #922B21;}
+.lilium-success                                                 {background: #196F3D; box-shadow: 0 0 5px 0 #196F3D;}
+
+
+@keyframes lilium-text {
+	0%      {opacity: 0; letter-spacing: -10px;}
+	50%     {letter-spacing: 0;}
+	100%    {opacity: 1;}
+}
+@keyframes lilium-border-left {
+	0%      {opacity: 1; left: calc(50% - 13px); translate3d(0,0,0);}
+	80%     {left: -170%; translate3d(0,0,1);}
+	100%    {opacity: 0; left: -200%; translate3d(0,0,0);}
+}
+@keyframes lilium-border-right {
+	0%      {opacity: 1; right: calc(50% - 13px); translate3d(0,0,0);}
+	80%     {right: -170%; translate3d(0,0,0);}
+	100%    {opacity: 0; right: -200%; translate3d(0,0,0);}
+}
+@keyframes lilium-el {
+	0%      { -webkit-filter: blur(200px); filter: blur(200px); opacity: 0;}
+	100%    { -webkit-filter: blur(0px); filter: blur(0px); opacity: 1;}
+}
+@keyframes lilium-el-removed {
+	0%      { -webkit-filter: blur(0px); filter: blur(0px); opacity: 1;}
+	100%    { -webkit-filter: blur(200px); filter: blur(200px); opacity: 0;}
+}
