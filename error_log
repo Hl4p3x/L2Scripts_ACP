@@ -1,0 +1,636 @@
+[22-Mar-2018 01:12:38 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /home/nationwarriors/public_html/cp/controllers/account.controller.php on line 64
+[22-Mar-2018 01:13:00 UTC] PHP Warning:  date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected the timezone 'UTC' for now, but please set date.timezone to select your timezone. in /home/nationwarriors/public_html/cp/controllers/account.controller.php on line 64
+[21-Mar-2018 22:15:56 Etc/GMT+3] PHP Notice:  Undefined index: ADD_CURRENCY_EURO in /home/nationwarriors/public_html/cp/strings_en.php on line 5
+[21-Mar-2018 22:45:15 Etc/GMT+3] PHP Notice:  Undefined index: obj_Id in /home/nationwarriors/public_html/cp/controllers/ajax.controller.php on line 204
+[21-Mar-2018 22:45:15 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'attribute' in 'field list'' in /home/nationwarriors/public_html/cp/libs/database.class.php:32
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(32): PDO->prepare('INSERT INTO ite...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(253): Database->insert('items_delayed', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/ajax.controller.php(204): Server_Model->AddItem(NULL, 4037, 150, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Ajax_Controller->globalcoins(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 32
+[21-Mar-2018 22:47:03 Etc/GMT+3] PHP Notice:  Undefined index: obj_Id in /home/nationwarriors/public_html/cp/controllers/ajax.controller.php on line 204
+[21-Mar-2018 22:47:03 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'owner_id' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(253): Database->insert('items_delayed', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/ajax.controller.php(204): Server_Model->AddItem(NULL, 4037, 250, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Ajax_Controller->globalcoins(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[21-Mar-2018 22:48:30 Etc/GMT+3] PHP Notice:  Undefined index: obj_Id in /home/nationwarriors/public_html/cp/controllers/ajax.controller.php on line 204
+[21-Mar-2018 22:48:30 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'owner_id' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(253): Database->insert('items_delayed', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/ajax.controller.php(204): Server_Model->AddItem(NULL, 4037, 100, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Ajax_Controller->globalcoins(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[21-Mar-2018 22:49:01 Etc/GMT+3] PHP Notice:  Undefined index: obj_Id in /home/nationwarriors/public_html/cp/controllers/ajax.controller.php on line 204
+[21-Mar-2018 22:49:01 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'owner_id' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(253): Database->insert('items_delayed', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/ajax.controller.php(204): Server_Model->AddItem(NULL, 4037, 500, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Ajax_Controller->globalcoins(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[21-Mar-2018 22:50:09 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'characters.obj_Id' in 'on clause'' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT item_id,...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(206): Database->select('SELECT item_id,...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/auction.controller.php(168): Server_Model->GetItemData('8', '268460532')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Auction_Controller->create(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[21-Mar-2018 22:54:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'characters.obj_Id' in 'on clause'' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT item_id,...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(206): Database->select('SELECT item_id,...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/auction.controller.php(168): Server_Model->GetItemData('8', '268459318')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Auction_Controller->create(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[21-Mar-2018 22:57:15 Etc/GMT+3] PHP Notice:  Undefined index: obj_Id in /home/nationwarriors/public_html/cp/controllers/ajax.controller.php on line 204
+[21-Mar-2018 22:57:15 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'owner_id' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(253): Database->insert('items_delayed', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/ajax.controller.php(204): Server_Model->AddItem(NULL, 4037, 10, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Ajax_Controller->globalcoins(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[21-Mar-2018 23:01:22 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM characters WHERE char_name = ?' at line 1' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT charId a...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(257): Database->select('SELECT charId a...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/ajax.controller.php(194): Server_Model->GetCharacter('Duff')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Ajax_Controller->globalcoins(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[21-Mar-2018 23:08:34 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'characters.obj_Id' in 'on clause'' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT item_id,...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(206): Database->select('SELECT item_id,...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/auction.controller.php(168): Server_Model->GetItemData('8', '268459318')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Auction_Controller->create(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[21-Mar-2018 23:10:23 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'characters.obj_Id' in 'on clause'' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT item_id,...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(206): Database->select('SELECT item_id,...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/auction.controller.php(168): Server_Model->GetItemData('8', '268459318')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Auction_Controller->create(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[21-Mar-2018 23:10:33 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'characters.obj_Id' in 'on clause'' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT item_id,...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(206): Database->select('SELECT item_id,...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/auction.controller.php(168): Server_Model->GetItemData('8', '268459318')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Auction_Controller->create(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[21-Mar-2018 23:11:40 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'characters.obj_Id' in 'on clause'' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT item_id,...')
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(206): Database->select('SELECT item_id,...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/auction.controller.php(168): Server_Model->GetItemData('8', '268458780')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Auction_Controller->create(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[21-Mar-2018 23:36:16 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:36:16 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:36:16 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:36:16 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:36:16 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:36:16 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:36:16 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:36:19 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[21-Mar-2018 23:37:08 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:37:08 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:37:08 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:37:08 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:37:08 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:37:08 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:37:08 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[21-Mar-2018 23:37:16 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:37:16 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:37:16 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:37:16 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:37:16 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:37:16 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:37:16 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[21-Mar-2018 23:53:05 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:53:05 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:53:05 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:53:05 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:53:05 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:53:05 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:53:05 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[21-Mar-2018 23:53:14 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:53:14 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:53:14 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:53:14 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:53:14 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:53:14 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:53:14 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: payment_status in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 148
+[21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: txn_id in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 149
+[21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: receiver_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 150
+[21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: payer_email in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 151
+[21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: mc_gross in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 152
+[21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: mc_currency in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 153
+[21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[22-Mar-2018 00:01:45 Etc/GMT+3] PHP Notice:  Use of undefined constant PAYSERA_PROJECTID - assumed 'PAYSERA_PROJECTID' in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 70
+[22-Mar-2018 00:01:45 Etc/GMT+3] PHP Notice:  Use of undefined constant PAYSERA_PROJECTPW - assumed 'PAYSERA_PROJECTPW' in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 71
+[22-Mar-2018 00:11:57 Etc/GMT+3] PHP Warning:  file_get_contents(https://api.l2topzone.com/v1/vote?token=f6f4c32fb97d65017804fedcf1f00062&amp;ip=15317): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home/nationwarriors/public_html/cp/controllers/vote.controller.php on line 96
+[22-Mar-2018 00:11:57 Etc/GMT+3] PHP Notice:  Trying to get property of non-object in /home/nationwarriors/public_html/cp/libs/topzoneapi.class.php on line 13
+[22-Mar-2018 00:27:02 Etc/GMT+3] PHP Parse error:  syntax error, unexpected 'MASTER_ACCOUNT' (T_STRING), expecting ')' in /home/nationwarriors/public_html/cp/strings_en.php on line 325
+[22-Mar-2018 00:27:03 Etc/GMT+3] PHP Parse error:  syntax error, unexpected 'MASTER_ACCOUNT' (T_STRING), expecting ')' in /home/nationwarriors/public_html/cp/strings_en.php on line 325
+[22-Mar-2018 00:27:06 Etc/GMT+3] PHP Parse error:  syntax error, unexpected 'MASTER_ACCOUNT' (T_STRING), expecting ')' in /home/nationwarriors/public_html/cp/strings_en.php on line 325
+[22-Mar-2018 00:27:23 Etc/GMT+3] PHP Parse error:  syntax error, unexpected '<' in /home/nationwarriors/public_html/cp/strings_en.php on line 325
+[22-Mar-2018 00:27:24 Etc/GMT+3] PHP Parse error:  syntax error, unexpected '<' in /home/nationwarriors/public_html/cp/strings_en.php on line 325
+[22-Mar-2018 00:33:03 Etc/GMT+3] PHP Notice:  Undefined offset: 1 in /home/nationwarriors/public_html/cp/controllers/luckywheel.controller.php on line 100
+[22-Mar-2018 00:33:04 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'count' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(253): Database->insert('items_delayed', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/luckywheel.controller.php(106): Server_Model->AddItem('268458803', NULL, NULL, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): LuckyWheel_Controller->spin(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[22-Mar-2018 13:16:33 Etc/GMT+3] PHP Warning:  file_get_contents(https://api.l2topzone.com/v1/vote?token=f6f4c32fb97d65017804fedcf1f00062&amp;ip=15317): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home/nationwarriors/public_html/cp/controllers/vote.controller.php on line 96
+[22-Mar-2018 13:16:33 Etc/GMT+3] PHP Notice:  Trying to get property of non-object in /home/nationwarriors/public_html/cp/libs/topzoneapi.class.php on line 13
+[22-Mar-2018 23:01:22 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:32 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:37 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:38 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:46 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:47 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:48 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:48 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:49 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:49 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:49 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:50 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:50 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:50 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:50 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:51 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:52 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:53 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:53 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:53 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:04:59 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:05:00 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:06:38 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:06:41 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:06:46 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:15:36 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:15:37 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:15:47 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT * FROM m...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(83): Database->select('SELECT * FROM m...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(19): Account_Model->getAccountData('8')
+#3 /home/nationwarriors/public_html/cp/controllers/account.controller.php(55): Account_Controller->prepareSidebar()
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->index(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:16:21 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(17): PDO->prepare('SELECT count(*)...')
+#1 /home/nationwarriors/public_html/cp/models/account.model.php(28): Database->select('SELECT count(*)...', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/account.controller.php(215): Account_Model->CheckEmail('4unknow@nationw...')
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Account_Controller->register(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 17
+[22-Mar-2018 23:23:04 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/nationwarriors/public_html/cp/models/account.model.php on line 85
+[22-Mar-2018 23:23:04 Etc/GMT+3] PHP Notice:  Undefined offset: -1 in /home/nationwarriors/public_html/cp/models/account.model.php on line 94
+[27-Mar-2018 11:14:52 Etc/GMT+3] PHP Notice:  Undefined offset: 1 in /home/nationwarriors/public_html/cp/controllers/luckywheel.controller.php on line 100
+[27-Mar-2018 11:14:54 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'count' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(253): Database->insert('items_delayed', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/luckywheel.controller.php(106): Server_Model->AddItem('268458921', NULL, NULL, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): LuckyWheel_Controller->spin(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
