@@ -30,8 +30,12 @@
                             <center><a href="/account/register" class="clearfix" type="submit"><?php echo _s("CREATE_ACCOUNT"); ?></a></center>
                         </form>
                         <!-- END LOGIN FORM -->
+
                     </div>
                 </div>
+				<br>
+				<br>
+				
                 <!-- END LOGIN BOX -->
             </div>
         </div>

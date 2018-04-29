@@ -233,6 +233,8 @@
             $('#paypalContainer').hide();
             $('#g2aContainer').show();
         }
+		
+		
     </script>
     <div class="modal fade" id="modalDonate" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
         <div class="modal-wrapper" style="width: 468px;">
@@ -243,10 +245,10 @@
                         <center><h4 class="modal-title"><i class="fa fa-bank fa-lg"></i> <?php echo _s("ADD_CURRENCY_MA"); ?></h4></center>
                     </div>
                     <div id="donateDefault" class="modal-body" style="text-align: center">
-                        <button type="button" class="btn btn-primary" onclick="g2aButton(this)">G2A</button> <button type="button" class="btn btn-primary" onclick="paypalButton(this)">PayPal</button>
+                        <button type="button" = onclick="g2aButton(this)"><img width="64px" height="35px" src="https://cp.nationwarriors.com/imgs/g2a_logo.jpg"/></button> <button type="button"  onclick="paypalButton(this)"><img width="64px" height="35px" src="https://cp.nationwarriors.com/imgs/paypal_logo.jpg"/></button>
                     </div>
                     <div class="modal-body" style="display: none; text-align: center" id="g2aContainer">
-                        <b>G2Apay</b>
+                        <b>G2Apay (Soon)</b>
                         <form action="/donate/g2a" method="post"> 
                             <?php echo _s("HOW_MANY_NEED"); ?> <input type="text" value="5" name="amount" style="margin-left: 10px;margin-right: -3px;width: 229px;" />
                             <div class="col-md-12" style="font-size: 10px; margin-left: 75px; margin-top: 2px;margin-bottom: 15px;"><?php echo _s("RECOMMEND_NOT_LESS"); ?></div>

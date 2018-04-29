@@ -172,7 +172,7 @@ Stack trace:
 [21-Mar-2018 23:59:27 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
 [22-Mar-2018 00:01:45 Etc/GMT+3] PHP Notice:  Use of undefined constant PAYSERA_PROJECTID - assumed 'PAYSERA_PROJECTID' in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 70
 [22-Mar-2018 00:01:45 Etc/GMT+3] PHP Notice:  Use of undefined constant PAYSERA_PROJECTPW - assumed 'PAYSERA_PROJECTPW' in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 71
-[22-Mar-2018 00:11:57 Etc/GMT+3] PHP Warning:  file_get_contents(https://api.l2topzone.com/v1/vote?token=f6f4c32fb97d65017804fedcf1f00062&amp;ip=15317): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+[22-Mar-2018 00:11:57 Etc/GMT+3] PHP Warning:  file_get_contents(https://api.l2topzone.com/v1/vote?token=f6f4c32fb97d65017804fedcf1f00062&amp;ip=15317): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
  in /home/nationwarriors/public_html/cp/controllers/vote.controller.php on line 96
 [22-Mar-2018 00:11:57 Etc/GMT+3] PHP Notice:  Trying to get property of non-object in /home/nationwarriors/public_html/cp/libs/topzoneapi.class.php on line 13
 [22-Mar-2018 00:27:02 Etc/GMT+3] PHP Parse error:  syntax error, unexpected 'MASTER_ACCOUNT' (T_STRING), expecting ')' in /home/nationwarriors/public_html/cp/strings_en.php on line 325
@@ -190,7 +190,7 @@ Stack trace:
 #4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
 #5 {main}
   thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
-[22-Mar-2018 13:16:33 Etc/GMT+3] PHP Warning:  file_get_contents(https://api.l2topzone.com/v1/vote?token=f6f4c32fb97d65017804fedcf1f00062&amp;ip=15317): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+[22-Mar-2018 13:16:33 Etc/GMT+3] PHP Warning:  file_get_contents(https://api.l2topzone.com/v1/vote?token=f6f4c32fb97d65017804fedcf1f00062&amp;ip=15317): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
  in /home/nationwarriors/public_html/cp/controllers/vote.controller.php on line 96
 [22-Mar-2018 13:16:33 Etc/GMT+3] PHP Notice:  Trying to get property of non-object in /home/nationwarriors/public_html/cp/libs/topzoneapi.class.php on line 13
 [22-Mar-2018 23:01:22 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'kdjhhyrudjkJJjdhyes.master_account' doesn't exist' in /home/nationwarriors/public_html/cp/libs/database.class.php:17
@@ -634,3 +634,88 @@ Stack trace:
 #4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
 #5 {main}
   thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[02-Apr-2018 16:46:47 Etc/GMT+3] PHP Notice:  Undefined offset: 13 in /home/nationwarriors/public_html/cp/controllers/luckywheel.controller.php on line 101
+[02-Apr-2018 16:46:50 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'count' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/server.model.php(271): Database->insert('items', Array)
+#2 /home/nationwarriors/public_html/cp/controllers/luckywheel.controller.php(107): Server_Model->AddItem('268458921', NULL, NULL, 0)
+#3 /home/nationwarriors/public_html/cp/libs/application.class.php(49): LuckyWheel_Controller->spin(Array)
+#4 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#5 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[05-Apr-2018 14:29:25 Etc/GMT+3] PHP Warning:  Missing argument 2 for Ticket_Model::newComment(), called in /home/nationwarriors/public_html/cp/controllers/ticket.controller.php on line 121 and defined in /home/nationwarriors/public_html/cp/models/ticket.model.php on line 14
+[05-Apr-2018 14:29:25 Etc/GMT+3] PHP Notice:  Undefined variable: admin in /home/nationwarriors/public_html/cp/models/ticket.model.php on line 16
+[06-Apr-2018 16:24:06 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[06-Apr-2018 16:24:09 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ma_id' cannot be null' in /home/nationwarriors/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/nationwarriors/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/nationwarriors/public_html/cp/models/donate.model.php(39): Database->insert('vendor_txn_log', Array)
+#2 /home/nationwarriors/public_html/cp/models/donate.model.php(13): Donate_Model->LogVendorTransaction('8XJ359115L41288...', '0.42', 'paypal', NULL)
+#3 /home/nationwarriors/public_html/cp/controllers/donate.controller.php(171): Donate_Model->PaymentReceived('8XJ359115L41288...', '0.42', 'paypal', NULL)
+#4 /home/nationwarriors/public_html/cp/libs/application.class.php(49): Donate_Controller->paypal_handler(Array)
+#5 /home/nationwarriors/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/nationwarriors/public_html/cp/libs/database.class.php on line 36
+[06-Apr-2018 18:07:14 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[06-Apr-2018 18:16:39 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/nationwarriors/public_html/cp/controllers/donate.controller.php on line 154
+[10-Apr-2018 13:53:08 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 13:53:16 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 14:09:53 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 14:09:59 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 14:34:59 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 14:35:16 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 14:35:24 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 14:35:35 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[10-Apr-2018 14:36:43 Etc/GMT+3] PHP Notice:  Undefined offset: 0 in /home/ktqh9zk96tn6/public_html/cp/models/account.model.php on line 85
+[11-Apr-2018 14:26:12 Etc/GMT+3] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`*.prod.ams3.secureserver.net' did not match expected CN=`mail.nationwarriors.com' in /home/ktqh9zk96tn6/public_html/cp/libs/phpmailer/class.smtp.php on line 369
+[11-Apr-2018 14:26:28 Etc/GMT+3] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`*.prod.ams3.secureserver.net' did not match expected CN=`mail.nationwarriors.com' in /home/ktqh9zk96tn6/public_html/cp/libs/phpmailer/class.smtp.php on line 369
+[11-Apr-2018 14:27:13 Etc/GMT+3] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`*.prod.ams3.secureserver.net' did not match expected CN=`mail.nationwarriors.com' in /home/ktqh9zk96tn6/public_html/cp/libs/phpmailer/class.smtp.php on line 369
+[11-Apr-2018 14:32:43 Etc/GMT+3] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`*.prod.ams3.secureserver.net' did not match expected CN=`mail.nationwarriors.com' in /home/ktqh9zk96tn6/public_html/cp/libs/phpmailer/class.smtp.php on line 369
+[11-Apr-2018 14:33:14 Etc/GMT+3] PHP Notice:  Use of undefined constant PHPMAILER_SMTP_SECURE - assumed 'PHPMAILER_SMTP_SECURE' in /home/ktqh9zk96tn6/public_html/cp/libs/accountmailer.class.php on line 17
+[11-Apr-2018 14:33:19 Etc/GMT+3] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`*.prod.ams3.secureserver.net' did not match expected CN=`mail.nationwarriors.com' in /home/ktqh9zk96tn6/public_html/cp/libs/phpmailer/class.smtp.php on line 369
+[11-Apr-2018 15:13:29 Etc/GMT+3] PHP Parse error:  syntax error, unexpected ')' in /home/ktqh9zk96tn6/public_html/cp/config.php on line 48
+[11-Apr-2018 15:13:33 Etc/GMT+3] PHP Parse error:  syntax error, unexpected ')' in /home/ktqh9zk96tn6/public_html/cp/config.php on line 48
+[11-Apr-2018 15:14:01 Etc/GMT+3] PHP Warning:  define() expects at least 2 parameters, 1 given in /home/ktqh9zk96tn6/public_html/cp/config.php on line 48
+[11-Apr-2018 15:14:02 Etc/GMT+3] PHP Notice:  Use of undefined constant PHPMAILER_SMTP_SECURE - assumed 'PHPMAILER_SMTP_SECURE' in /home/ktqh9zk96tn6/public_html/cp/libs/accountmailer.class.php on line 17
+[11-Apr-2018 15:16:15 Etc/GMT+3] PHP Warning:  stream_socket_enable_crypto(): Peer certificate CN=`*.prod.ams3.secureserver.net' did not match expected CN=`nationwarriors.com' in /home/ktqh9zk96tn6/public_html/cp/libs/phpmailer/class.smtp.php on line 369
+[16-Apr-2018 08:37:59 Etc/GMT+3] PHP Notice:  Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' in /home/ktqh9zk96tn6/public_html/cp/autoloader.php on line 19
+[16-Apr-2018 08:37:59 Etc/GMT+3] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/ktqh9zk96tn6/public_html/cp/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/ktqh9zk96tn6/public_html/cp/index.php on line 15
+[16-Apr-2018 08:37:59 Etc/GMT+3] PHP Notice:  Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' in /home/ktqh9zk96tn6/public_html/cp/autoloader.php on line 19
+[16-Apr-2018 08:37:59 Etc/GMT+3] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/ktqh9zk96tn6/public_html/cp/index.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/ktqh9zk96tn6/public_html/cp/index.php on line 15
+[19-Apr-2018 17:45:28 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8
+[19-Apr-2018 17:47:40 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8
+[20-Apr-2018 08:16:36 Etc/GMT+3] PHP Notice:  Undefined index: amount in /home/ktqh9zk96tn6/public_html/cp/controllers/donate.controller.php on line 28
+[20-Apr-2018 14:48:17 Etc/GMT+3] PHP Notice:  Undefined index: amount in /home/ktqh9zk96tn6/public_html/cp/controllers/donate.controller.php on line 28
+[20-Apr-2018 20:25:10 Etc/GMT+3] PHP Notice:  Undefined index: HTTP_USER_AGENT in /home/ktqh9zk96tn6/public_html/cp/controllers/account.controller.php on line 47
+[21-Apr-2018 07:03:01 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8
+[21-Apr-2018 07:35:07 Etc/GMT+3] PHP Warning:  Missing argument 2 for Ticket_Model::newComment(), called in /home/ktqh9zk96tn6/public_html/cp/controllers/ticket.controller.php on line 121 and defined in /home/ktqh9zk96tn6/public_html/cp/models/ticket.model.php on line 14
+[21-Apr-2018 07:35:07 Etc/GMT+3] PHP Notice:  Undefined variable: admin in /home/ktqh9zk96tn6/public_html/cp/models/ticket.model.php on line 16
+[21-Apr-2018 08:54:14 Etc/GMT+3] PHP Warning:  file_get_contents(https://api.l2topzone.com/v1/server_f6f4c32fb97d65017804fedcf1f00062/getUserData): failed to open stream: HTTP request failed! HTTP/1.1 403 Forbidden
+ in /home/ktqh9zk96tn6/public_html/cp/controllers/vote.controller.php on line 96
+[21-Apr-2018 08:54:14 Etc/GMT+3] PHP Notice:  Trying to get property of non-object in /home/ktqh9zk96tn6/public_html/cp/libs/topzoneapi.class.php on line 13
+[21-Apr-2018 09:25:13 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8
+[21-Apr-2018 11:31:20 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8
+[21-Apr-2018 15:00:44 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8
+[21-Apr-2018 18:20:12 Etc/GMT+3] PHP Notice:  Undefined index: custom in /home/ktqh9zk96tn6/public_html/cp/controllers/donate.controller.php on line 154
+[21-Apr-2018 18:20:13 Etc/GMT+3] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'ma_id' cannot be null' in /home/ktqh9zk96tn6/public_html/cp/libs/database.class.php:36
+Stack trace:
+#0 /home/ktqh9zk96tn6/public_html/cp/libs/database.class.php(36): PDOStatement->execute()
+#1 /home/ktqh9zk96tn6/public_html/cp/models/donate.model.php(39): Database->insert('vendor_txn_log', Array)
+#2 /home/ktqh9zk96tn6/public_html/cp/models/donate.model.php(13): Donate_Model->LogVendorTransaction('46T195246F50488...', '0.01', 'paypal', NULL)
+#3 /home/ktqh9zk96tn6/public_html/cp/controllers/donate.controller.php(171): Donate_Model->PaymentReceived('46T195246F50488...', '0.01', 'paypal', NULL)
+#4 /home/ktqh9zk96tn6/public_html/cp/libs/application.class.php(49): Donate_Controller->paypal_handler(Array)
+#5 /home/ktqh9zk96tn6/public_html/cp/index.php(29): Application->__construct()
+#6 {main}
+  thrown in /home/ktqh9zk96tn6/public_html/cp/libs/database.class.php on line 36
+[21-Apr-2018 19:37:37 Etc/GMT+3] PHP Notice:  Trying to get property of non-object in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 23
+[22-Apr-2018 00:26:51 Etc/GMT+3] PHP Warning:  Missing argument 2 for Ticket_Model::newComment(), called in /home/ktqh9zk96tn6/public_html/cp/controllers/ticket.controller.php on line 121 and defined in /home/ktqh9zk96tn6/public_html/cp/models/ticket.model.php on line 14
+[22-Apr-2018 00:26:51 Etc/GMT+3] PHP Notice:  Undefined variable: admin in /home/ktqh9zk96tn6/public_html/cp/models/ticket.model.php on line 16
+[22-Apr-2018 11:52:37 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8
+[22-Apr-2018 11:56:52 Etc/GMT+3] PHP Notice:  Undefined index: g-recaptcha-response in /home/ktqh9zk96tn6/public_html/cp/libs/captcha.class.php on line 8

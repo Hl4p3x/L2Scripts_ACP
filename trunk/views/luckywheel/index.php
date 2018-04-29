@@ -66,7 +66,9 @@
                                         <div class="wheel-info">
                                             <?php echo _s("TRY_YOUR_LUCK"); ?>
                                             <br><br><br><br>
-                                            <?php echo _s("LEAVE_COMMENT"); ?>                                   <br><br><br><br>
+                                            <?php echo _s("LEAVE_COMMENT"); ?>                                   <br>
+											You can check our complete list of items in <a HREF="https://community.nationwarriors.com/index.php?/topic/38-lucky-wheel-items/" TARGET="_blank" >forum</a>
+											<br><br><br>
                                             <br><br>
                                             <span class="global-blue"><?php echo _s("ONE_PLAY_EQUALS"); ?></span>
                                             <br><br>

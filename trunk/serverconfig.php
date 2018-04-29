@@ -4,21 +4,21 @@ $_CONFIG['servers'] = array(
     array(
 		//Server name
 		//Название сервера
-        'name' => 'Eternalwars',
+        'name' => 'Nation Warriors Classic',
 
         // login server mysql information
 		//Конфигурация мускула для логин сервера
-        'ls_mysql_host' => 'localhost',
-        'ls_mysql_user' => 'root',
-        'ls_mysql_pass' => 'potokerios1',
-        'ls_mysql_db'   => 'eternalwars',
+        'ls_mysql_host' => '46.105.30.162',
+        'ls_mysql_user' => 'infoalqowirjfhvmxh6384%#*03716',
+        'ls_mysql_pass' => '?5k}NE56wSUB?!m',
+        'ls_mysql_db'   => 'kdjhhyrudjkJJjdhyes',
 
         // game server mysql information
 		//Конфигурация мускула для гейм сервера
-        'gs_mysql_host' => 'localhost',
-        'gs_mysql_user' => 'root',
-        'gs_mysql_pass' => 'potokerios1',
-        'gs_mysql_db'   => 'eternalwars',
+        'gs_mysql_host' => '46.105.30.162',
+        'gs_mysql_user' => 'infoalqowirjfhvmxh6384%#*03716',
+        'gs_mysql_pass' => '?5k}NE56wSUB?!m',
+        'gs_mysql_db'   => 'kdjhhyrudjkJJjdhyes',
 		
 		//Maximum game accounts per Master accounts
 		//Максимум игровых акаунтов для одного мастер акаунта
@@ -28,6 +28,6 @@ $_CONFIG['servers'] = array(
         'coin_id'       => 4037,
 		//ticket prefix name
 		//Префикс для тех. поддержки
-        'ticket_prefix' => 'TKI1-',
+        'ticket_prefix' => 'TKT-NW-',
     ),
 );

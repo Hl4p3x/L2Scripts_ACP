@@ -16,7 +16,7 @@
                     <li><?php echo _s("MAIN_PAGE_CAP"); ?></li>
                 </ol>
             </section>
-            <!-- END CONTENT HEADER -->z
+            <!-- END CONTENT HEADER -->
             <!-- BEGIN MAIN CONTENT -->
             <section class="content">
                 <center><div class="row" style="min-width: 850px;max-width: 850px;">
@@ -49,7 +49,7 @@
                     </div>
 					 <div class="col-md-4" style="text-align: left;">
 					<div class="modal-content" style="min-width: 395px;max-width: 395px; padding: 10px;height: 252px;">
-                    <b><?php echo _s("GAME_ACCOUNTS"); ?></b> <?php echo _s("GOLD_DESCR1"); ?>
+                    <b><?php echo _s("GAME_COIN"); ?></b> <?php echo _s("GOLD_DESCR1"); ?>
 	                 </br><?php echo _s("GOLD_DESCR2"); ?>
 
                 </div>

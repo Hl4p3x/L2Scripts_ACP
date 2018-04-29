@@ -19,8 +19,9 @@ class Captcha {
 
         curl_close($ch);
 
-
+        $captchaResponse = json_decode($result);
+        if ($captchaResponse->success == 'true')
             return true;
-
+        return false;
     }
 }
