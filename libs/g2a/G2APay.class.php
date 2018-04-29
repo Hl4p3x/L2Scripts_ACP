@@ -58,10 +58,11 @@ class G2APay{
     ];
     $post = $this->PostQuery('/index/createQuote', $fields);
     if(isset($post->token)) return $post->token;
+    //print_r($post);
     return false;
   }
   private function CalculatingHash($orderid, $amount){
-    return hash('sha512', $orderid.$amount.$this->Currency.$this->ApiSecret);
+    return hash('sha256', $orderid.$amount.$this->Currency.$this->ApiSecret);
   }
   private function PostQuery($method, $fields){
     $ch = curl_init();

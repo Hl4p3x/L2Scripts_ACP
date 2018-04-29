@@ -445,7 +445,7 @@ function buyAuction(that){
             }
         });
     }else if(thisAction == 'place_bet'){
-        $('.put-cost').text(thisItemCost+' USD');
+        $('.put-cost').text(thisItemCost+' EUROS');
         $('.put-item').html(thisItemName);
         $('#modal-pace-ber').arcticmodal({
             closeOnEsc: false,

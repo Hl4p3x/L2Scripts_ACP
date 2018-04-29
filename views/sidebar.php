@@ -1,13 +1,10 @@
     <aside class="left-side sidebar-offcanvas">
         <section class="sidebar" style="position:fixed;width:250px;">
-            
-			<br><br><br><br><br><br>
-            <div class="balance-info">
+		<br><br><br><br><br><br>
+            <div class="discount-info">
                 <?php echo _s("BALANCE"); ?>: <span><?php echo DONATE_CURRENCY_SYMBOL; ?><span id="cur_balance"><?php echo $this->balance; ?></span></span>
             </div>
-
             <!-- Are we doing this? -->
-
             <div class="input-group">
                 <div class="form-group">
                     <label style='display:none;'  class="col-sm-2 control-label" style="line-height: 3; color: #ffffff; margin-right: 10px"><?php echo _s("SERVER"); ?>: </label>
@@ -28,7 +25,7 @@
                 </li>
                 <li>
                     <a href="https://nationwarriors.com" target="_blank" >
-                        <i class="fa fa-th-large"></i><span><?php echo _s("OUR_SITE"); ?></span>
+                        <i class="fa fa-th-large"></i><span>Site</span>
                     </a>
                 </li>
 				<li>
@@ -81,5 +78,7 @@
                 </li>
                 <?php endif; ?>
             </ul>
+			<br>
+			<img width="300px" height="80px" src="https://cp.nationwarriors.com/imgs/classic_logo.png"/>
         </section>
     </aside>

@@ -831,6 +831,7 @@ ul.navbar-nav li.navbar-menu .dropdown-menu {
     padding: 6px 5px 6px 40px;
 }
 
+
 /* COLLAPSE SIDEBAR */
 .left-side.collapse-left {
     width: 50px;
@@ -2552,6 +2553,10 @@ input.error:focus {
     color: #d9534f;
 }
 
+.sendemail {
+    color: #84DE35;
+}
+
 /* FORM WIZARD */
 #rootwizard .navbar {
     position: relative;
@@ -4213,8 +4218,8 @@ select, textarea, input[type=text], input[type=password], input[type=datetime], 
 
 .wheel-prize-name															{width:140px; margin-top:20px; position:absolute; text-align:center; color:#dc7c00;}
 .wheel-prize																{width:140px; margin-top:92px; position:absolute; text-align:center;}
-.wheel-prize img															{width:90px; height:90px;}
-.wheel-glow-effect															{width:170px; height:170px; position:absolute; background:url(../img//well/Win_Effect.png); background-size:contain; margin:55px 0 0 -10px; opacity:0.3;}
+.wheel-prize img															{width:32px; height:32px;}
+.wheel-glow-effect															{width:120px; height:172px; position:absolute; background:url(../img//well/Win_Effect.png); background-size:contain; margin:42px 0 0 13px; opacity:0.3;}
 
 .wheel-buttonoff															{position:absolute; width:259px; height:259px; border-radius:50%; margin:486px 0 0 191px; background:url(../img//well/buttons.png) 0 -777px; z-index:5;}
 .wheel-button																{position:absolute; width:259px; height:259px; border-radius:50%; margin:486px 0 0 191px; background:url(../img//well/buttons.png); cursor:pointer; z-index:4;}
@@ -4228,7 +4233,7 @@ select, textarea, input[type=text], input[type=password], input[type=datetime], 
 #lucky-wheel .win-popup														{width:485px; margin:100px 0 0 75px;}
 #lucky-wheel .win-popup .win-img											{text-align:center;}
 #lucky-wheel .win-popup .win-item-img										{text-align:center;}
-#lucky-wheel .win-popup .win-item-img img									{width:150px; height:150px;}
+#lucky-wheel .win-popup .win-item-img img									{width:32px; height:32px;}
 #lucky-wheel .win-popup .win-item-name										{text-align:center; margin-top:5px; background:url(../img//well/Itemname_bg.png) no-repeat; width:485px; height:67px; color:#33d9f1; font: 24px/64px 'Open Sans', sans-serif; text-shadow: 2px 2px 3px #000;}
 
 #lucky-wheel .start-popup .wheel-info										{width:430px;}
@@ -4251,12 +4256,12 @@ select, textarea, input[type=text], input[type=password], input[type=datetime], 
 .wheel-loading-gears														{width:101px; height:101px; margin:310px 0 0 270px; background:url(../img//well/gears.gif) no-repeat;}
 .wheel-loading																{width:188px; height:63px; margin:10px 0 0 223px; background:url(../img//well/loading.png) no-repeat;}
 
-#prize-block																{width:180px; height:832px; background:#0f0000; display: inline-block; margin-left: -3px; overflow:auto;}
+#prize-block																{width:150px; height:832px; background:#0f0000; display: inline-block; margin-left: -3px; overflow:auto;}
 #prize-block .prize-item													{padding:3px 0 3px 0; border-bottom: 1px solid #655757; border-top: 1px solid #562626;}
 
-.prize-item_name															{text-align:center; width:150px; padding-bottom:5px; color:#FFF; font-size:16px; text-shadow: 2px 2px 3px #000;}
-.prize-item_img																{width:150px; text-align:center; padding-top:5px;}
-.prize-item_img img															{width:80px; height:80px;}
+.prize-item_name															{text-align:center; width:120px; padding-bottom:5px; color:#FFF; font-size:12px; text-shadow: 2px 2px 3px #000;}
+.prize-item_img																{width:120px; text-align:center; padding-top:7px;}
+.prize-item_img img															{width:32px; height:32px;}
 
 
 #wheel-faq																	{float:left; width:600px; margin-left:50px;}

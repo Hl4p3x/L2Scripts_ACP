@@ -7,13 +7,13 @@ RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
 
 RewriteCond %{HTTP} off
-RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
 # BEGIN cPanel-generated php ini directives, do not edit
 # Manual editing of this file may result in unexpected behavior.
 # To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
 # For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
 <IfModule php5_module>
-  php_value date.timezone "Etc/GMT+3"
+  php_value date.timezone "Etc/GMT+1"
 </IfModule>
 # END cPanel-generated php ini directives, do not edit

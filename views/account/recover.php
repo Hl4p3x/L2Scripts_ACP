@@ -13,7 +13,7 @@
                         <form name="recover" action="/account/recovery" class="form-login"  method="POST">
                             <div id="errorarea"></div>
                             <input type="text" name="email" id="email" class="form-control" placeholder="<?php echo _s("MAIL"); ?>" autofocus>
-                            <p id="errorsMessage" class="error"><?php echo $this->message; ?></p>
+                            <p id="errorsMessage" class="sendemail"><?php echo $this->message; ?></p>
                             <div style="margin-top:5px;margin-bottpm:5px;" class="g-recaptcha" data-sitekey="<?php echo CAPTCHA_PUBLIC_KEY; ?>"></div>
                             <button class="btn btn-lg btn-primary btn-block" type="submit"><?php echo _s("SEND_INSTRUCTION"); ?></button>
                         	<hr style="margin-bottom: 20px; border: 0; border-top: 1px solid #d0d0d0;">
